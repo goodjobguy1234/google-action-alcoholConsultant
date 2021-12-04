@@ -1,0 +1,33 @@
+parameters:
+- name: beer
+  type:
+    name: alcoholTypeForBeer
+- name: wine
+  type:
+    name: alcoholTypeForWine
+- name: lao
+  type:
+    name: alcoholTypeForLao
+trainingPhrases:
+- เอา($beer 'ลาเกอร์' auto=false)
+- อยากได้($wine 'ไวน์ขาว' auto=false)ครับ
+- ($wine 'ไวน์แดง' auto=true)
+- อยากได้($wine 'ไวน์โรเซ่' auto=false)
+- พี่อยากดื่ม($wine 'ไวน์หวาน' auto=false)จัง
+- ($beer 'เอล' auto=false)หน่อยน้อง
+- ($beer 'เบียร์ขาว' auto=false)หน่อยสิจ้ะ
+- เอา($beer 'สเตาท์' auto=false)
+- ขอ($beer 'เบียร์ดำ' auto=false)
+- อยากดื่ม($beer 'เบียร์สด' auto=false)
+- อยากได้($beer 'ไลท์เบียร์' auto=false)
+- อยากกิน($lao 'โซจู' auto=false)จัง
+- ขอ($lao 'วิสกี้' auto=false)หน่อยนะ
+- อยากได้($wine 'ไวน์แดง' auto=false)
+- ($lao 'บรั่นดี' auto=true)
+- ขอ($lao 'จิน' auto=false)
+- อยากได้($lao 'รัม' auto=false)
+- อยากได้($lao 'เตกีลา' auto=false)
+- ขอ($lao 'โซจู' auto=false)
+- ขอ($lao 'สาเก' auto=false)
+- ขอ($lao 'วอดก้า' auto=false)
+- อยากได้($lao 'วอดก้า' auto=false)มากเลยครับ

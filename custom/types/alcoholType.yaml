@@ -1,0 +1,18 @@
+synonym:
+  entities:
+    เบียร์:
+      synonyms:
+      - เบียร์
+      - เบีย
+    เหล้า:
+      synonyms:
+      - เหล้า
+      - เล่า
+    ไวน์:
+      synonyms:
+      - ไวน์
+      - "y"
+      - วาย
+      - ไวย์
+      - wine
+  matchType: FUZZY_MATCH

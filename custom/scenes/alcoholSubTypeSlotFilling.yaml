@@ -1,0 +1,67 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: ok $session.params.subtype
+  transitionToScene: actions.scene.END_CONVERSATION
+intentEvents:
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: <speak>ไม่มีประเภทนี้ค่ะ <break time="0.5" />ลองอย่างอื่นดู</speak>
+  intent: actions.intent.NO_MATCH_1
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: <speak>น้องเล็กไม่ได้ยินที่คุณพูด <break time="0.5" />พูดใหม่ได้มั้ยคะ</speak>
+  intent: actions.intent.NO_INPUT_1
+slots:
+- commitBehavior:
+    writeSessionParam: subtype
+  name: beer
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: slot beer
+  type:
+    name: alcoholTypeForBeer
+- commitBehavior:
+    writeSessionParam: subtype
+  name: wine
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: slot wine
+  type:
+    name: alcoholTypeForWine
+- commitBehavior:
+    writeSessionParam: subtype
+  name: lao
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: slot lao
+  type:
+    name: alcoholTypeForLao

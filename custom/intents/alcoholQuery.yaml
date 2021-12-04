@@ -1,0 +1,22 @@
+parameters:
+- name: alcoholType
+  type:
+    name: alcoholType
+- name: percent
+  type:
+    name: actions.type.Number
+trainingPhrases:
+- ขอ($alcoholType 'เบียร์' auto=false)
+- จัด($alcoholType 'เบียร์' auto=false)มา
+- ขอเครื่องดื่มความแรง ($percent '30' auto=false)%
+- เอาอะไรก็ได้ ($percent '50' auto=false)%
+- ($alcoholType 'ไวน์' auto=false) ($percent '20' auto=false)% หน่อย
+- ขอ($alcoholType 'เหล้า' auto=false) ($percent '5' auto=false)%
+- จัด($alcoholType 'เหล้า' auto=false)มา
+- เอา($alcoholType 'ไวน์' auto=false)มา
+- ขอ($alcoholType 'เหล้า' auto=false)
+- ขอ($alcoholType 'เหล้า' auto=false)แรงๆหน่อย
+- อยากได้($alcoholType 'เหล้า' auto=false)จัง
+- อยากได้($alcoholType 'ไวน์' auto=false)ไม่แรงมาก
+- ขอ($alcoholType 'ไวน์' auto=false)
+- ขอ($alcoholType 'เหล้า' auto=false)
