@@ -1,0 +1,20 @@
+synonym:
+  entities:
+    สปาร์คกลิ้งไวน์:
+      synonyms:
+      - สปาร์คกลิ้งไวน์
+      - แชมเปญ
+    ไวน์ขาว:
+      synonyms:
+      - ไวน์ขาว
+    ไวน์หวาน:
+      synonyms:
+      - ไวน์หวาน
+    ไวน์แดง:
+      synonyms:
+      - ไวน์แดง
+    ไวน์โรเซ่:
+      synonyms:
+      - ไวน์โรเซ่
+      - ไวน์โรส
+  matchType: EXACT_MATCH

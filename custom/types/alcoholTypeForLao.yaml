@@ -1,0 +1,36 @@
+synonym:
+  entities:
+    จิน:
+      synonyms:
+      - จิน
+      - กิน
+    บรั่นดี:
+      synonyms:
+      - บรั่นดี
+      - บั่นดี
+    รัม:
+      synonyms:
+      - รัม
+      - รำ
+    วิสกี้:
+      synonyms:
+      - วิสกี้
+      - วิสกี่
+    วอดก้า:
+      synonyms:
+      - วอดก้า
+      - เหล้าขาว
+    สาเก:
+      synonyms:
+      - สาเก
+      - สะเก
+    เตกีลา:
+      synonyms:
+      - เตกีลา
+      - เตกิลา
+      - เตกิล่า
+    โซจู:
+      synonyms:
+      - โซจู
+      - โชจู
+  matchType: EXACT_MATCH

@@ -1,0 +1,82 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: <speak>งั้นเอาตามนี้เลยนะ<break time="1"/>$session.params.alcoholName
+                $session.params.percent เปอร์เซ็น</speak>
+  transitionToScene: SecondTestResponse
+slots:
+- commitBehavior:
+    writeSessionParam: alcoholName
+  name: alcoholName
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: ต้องการแอลกอฮอลประเภทไหน
+    noInputFinalPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: น้องเล็กไม่ทันฟัง พูดใหม่ได้มั้ย
+    noInputPrompt1:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: น้องเล็กไม่ทันฟัง พูดใหม่ได้มั้ย
+    noInputPrompt2:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: น้องเล็กไม่ทันฟัง พูดใหม่ได้มั้ย
+    noMatchFinalPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: เราไม่ขาย
+    noMatchPrompt1:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: เราไม่ขาย
+    noMatchPrompt2:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: เราไม่ขาย
+  required: true
+  type:
+    name: alcoholType
+- commitBehavior:
+    writeSessionParam: percent
+  name: percent
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: ต้องการแอลกอฮอลกี่เปอร์เซ็น
+  required: true
+  type:
+    name: actions.type.Number

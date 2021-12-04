@@ -1,0 +1,27 @@
+intentEvents:
+- intent: alcoholQuery
+  transitionToScene: alcoholQuerySlotFilling
+- intent: askMenu
+  transitionToScene: alcoholQuerySlotFilling
+- intent: alcoholSubType
+  transitionToScene: alcoholSubTypeSlotFilling
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: <speak>น้องเล็กไม่เข้าใจที่คุณพูดเลย<break time="1" />ขอใหม่ได้มั้ยคะ</speak>
+            - speech: <speak>รายการที่ขอ<break time="1" />น้องเล็กไม่มีให้หรอกนะ <break
+                time="1" />ลองอย่างอื่นมั้ยคะ</speak>
+  intent: actions.intent.NO_MATCH_1
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: <speak>สวัสดีค่ะ <break time="0.5" />น้องเล็กพร้อมให้บริการ <break
+              time="0.5" />สนใจแอลกอฮอล์ประเภทไหนบอกได้เลยนะ</speak>
+          - speech: <speak>ดีจ้า <break time="0.5" />ต้องการแอลกอฮอล์แบบไหนบอกน้องเล็กได้เลยนะ</speak>
+          - speech: <speak>มีอะไรให้น้องเล็กรับใช้<break time="0.5" /> อยากได้แอลกอฮอล์แบบไหนดีคะวันนี้</speak>

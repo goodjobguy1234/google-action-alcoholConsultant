@@ -1,0 +1,53 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: ได้เลย $session.params.alcoholType $session.params.percent เปอร์เซ็นต์
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: alcoholType
+  name: alcoholType
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: พอจะทราบชนิดแอลกอฮอล์มั้ยคะ
+    noInputPrompt1:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: ต้องการแอลกอฮอล์ประเภทไหน
+    noMatchPrompt1:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: <speak>น้องเล็กไม่มีเครื่องดื่มชนิดนี้ <break time="1" />เป็นอย่างอื่นได้มั้ย</speak>
+  required: true
+  type:
+    name: alcoholType
+- commitBehavior:
+    writeSessionParam: percent
+  name: percent
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: เปอร์เซ็นต์ของแอลกอฮอล์เท่าไหรหรอ
+  required: true
+  type:
+    name: actions.type.Number
