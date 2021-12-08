@@ -1,0 +1,45 @@
+synonym:
+  entities:
+    ก็:
+      synonyms:
+      - ก็
+      - ก็และ
+    ขอ:
+      synonyms:
+      - ขอ
+    คือ:
+      synonyms:
+      - คือ
+      - คือว่า
+      - คืองี้
+    ชื่อ:
+      synonyms:
+      - ชื่อ
+    บ้าง:
+      synonyms:
+      - บ้าง
+    ผม:
+      synonyms:
+      - ผม
+      - ฉัน
+      - กู
+      - ดิฉัน
+      - ึ
+    มึง:
+      synonyms:
+      - มึง
+    อยาก:
+      synonyms:
+      - อยาก
+      - อยู่
+      - อย่าง
+    เบอร์:
+      synonyms:
+      - เบอร์
+      - เบอร์โทร
+      - เบอร์บ้าน
+      - เบอร์คือ
+    แล้ว:
+      synonyms:
+      - แล้ว
+  matchType: EXACT_MATCH

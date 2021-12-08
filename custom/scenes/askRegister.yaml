@@ -1,0 +1,35 @@
+intentEvents:
+- intent: refuseRegister
+  transitionToScene: askForIntention
+- intent: userInfoFilling
+  transitionToScene: registerProcess
+- intent: wantToRegister
+  transitionToScene: registerProcess
+- intent: "NO"
+  transitionToScene: askForIntention
+- intent: "YES"
+  transitionToScene: registerProcess
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: น้องเล็กได้ยินไม่ชัดเลย ขอใหม่ได้มั้ย
+  intent: actions.intent.NO_MATCH_1
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: น้องเล็กรออยู่นะ
+  intent: actions.intent.NO_INPUT_1
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: สนใจจะสมัครสมาชิกกับน้องเล็กมั้ย เพียงแค่บอกชื่อกับเบอร์ให้เอง
+              น้องเล็กจะได้ช่วยแนะนำคุณให้ดีขึ้นในครั้งต่อๆไป

@@ -1,0 +1,16 @@
+intentEvents:
+- intent: userInfoFilling
+  transitionToScene: loginProcess
+- intent: refuseLogin
+  transitionToScene: askForIntention
+- intent: "NO"
+  transitionToScene: askForIntention
+- intent: "YES"
+  transitionToScene: loginProcess
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: คุณอยากเข้าใช้งานบัญชีมั้ย
