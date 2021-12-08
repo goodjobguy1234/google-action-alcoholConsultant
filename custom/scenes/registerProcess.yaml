@@ -1,0 +1,39 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: confirmRegisterInfo
+intentEvents:
+- intent: refuseRegister
+  transitionToScene: askForIntention
+- intent: "NO"
+  transitionToScene: askForIntention
+onSlotUpdated:
+  webhookHandler: userAccValidation
+slots:
+- commitBehavior:
+    writeSessionParam: name
+  name: name
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: บอกชื่อกับน้องเล็กได้เลย
+  required: true
+  type:
+    name: userName
+- commitBehavior:
+    writeSessionParam: phone
+  name: phone
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: น้องเล็กอยากรู้เบอร์ของคุณด้วย
+  required: true
+  type:
+    name: phoneNumber

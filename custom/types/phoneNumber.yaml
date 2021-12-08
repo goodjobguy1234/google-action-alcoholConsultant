@@ -1,0 +1,8 @@
+regularExpression:
+  entities:
+    \d{1,10}\s?\d{1,10}\s?\d{1,10}:
+      regularExpressions:
+      - \d{1,10}\s?\d{1,10}\s?\d{1,10}
+    \d{3}\s?\d{3}\s?\d{4}:
+      regularExpressions:
+      - \d{3}\s?\d{3}\s?\d{4}

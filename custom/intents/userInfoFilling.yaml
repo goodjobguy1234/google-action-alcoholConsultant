@@ -1,0 +1,22 @@
+parameters:
+- name: name
+  type:
+    name: userName
+- name: phone
+  type:
+    name: phoneNumber
+trainingPhrases:
+- ($name 'เอก' auto=false)
+- ($name 'แก้ม' auto=false)
+- ($name 'ก้อย' auto=false)
+- ($name 'แบม' auto=false)
+- ($notUsed 'ชื่อ' auto=false)($name 'มิ้น' auto=false)($notUsed 'เบอร์' auto=false)($phone
+  '095 877 0472' auto=false)
+- ($name 'เอล็ก' auto=false)($notUsed 'ค่ะ' auto=false)
+- ($notUsed 'ชื่อ' auto=false)($name 'กาย' auto=false)($notUsed 'ครับ' auto=false)
+- ($notUsed 'ชื่อ' auto=false)($name 'ตุ๋ย' auto=false)($notUsed 'เบอร์คือ' auto=false)($phone
+  '089 694 8923' auto=false)($notUsed 'ค่ะ' auto=false)
+- ($notUsed 'ชื่อ' auto=false)($name 'ส้ม' auto=false)
+- ($notUsed 'ชื่อ' auto=false)($name 'เอก' auto=false)
+- ($notUsed 'ชื่อ' auto=false)($name 'แบม' auto=false)($notUsed 'เบอร์' auto=false)($phone
+  '063 948 9842' auto=false)

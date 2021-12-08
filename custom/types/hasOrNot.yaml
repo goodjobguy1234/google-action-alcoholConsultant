@@ -1,0 +1,11 @@
+synonym:
+  entities:
+    มี:
+      synonyms:
+      - มี
+      - เยส
+    ไม่:
+      synonyms:
+      - ไม่
+      - โนว
+  matchType: EXACT_MATCH

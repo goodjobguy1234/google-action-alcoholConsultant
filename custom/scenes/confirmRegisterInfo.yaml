@@ -1,0 +1,14 @@
+intentEvents:
+- handler:
+    webhookHandler: userRegister
+  intent: "YES"
+  transitionToScene: askForIntention
+- intent: "NO"
+  transitionToScene: registerProcess
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: คุณชื่อ $session.params.name เบอร์ $session.params.phone ใช่ไหม
