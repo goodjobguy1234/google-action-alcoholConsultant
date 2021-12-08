@@ -2,7 +2,7 @@ trainingPhrases:
 - เคเลย
 - เค
 - เคร
-- ได้อยู่($notUsedWord1 '' auto=true)
+- ได้อยู่
 - ($notUsedWord1 'อยากมากๆ' auto=true)
 - ($notUsedWord1 'อยาก' auto=true)
 - ได้
