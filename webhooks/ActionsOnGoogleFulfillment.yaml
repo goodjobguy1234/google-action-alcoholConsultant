@@ -1,2 +1,6 @@
+handlers:
+- name: userAccValidation
+- name: userLogin
+- name: userRegister
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment

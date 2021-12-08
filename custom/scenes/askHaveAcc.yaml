@@ -1,0 +1,20 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && session.params.isHasAcc == "มี"
+  transitionToScene: askLogin
+- condition: scene.slots.status == "FINAL" && session.params.isHasAcc == "ไม่มี"
+  transitionToScene: askRegister
+slots:
+- commitBehavior:
+    writeSessionParam: isHasAcc
+  name: isHasAcc
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: คุณมีบัญชีมั้ยน้องเล็กจะได้เรียกคุณถูก
+  required: true
+  type:
+    name: hasOrNot
