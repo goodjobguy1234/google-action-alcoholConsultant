@@ -1,0 +1,12 @@
+intentEvents:
+- intent: queryByPercent
+  transitionToScene: queryThirdStepSlotFilling
+- intent: SKIP
+  transitionToScene: queryFourthIntent
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: อยากได้เปอร์เซ็นแอลกอฮอล์เท่าไร

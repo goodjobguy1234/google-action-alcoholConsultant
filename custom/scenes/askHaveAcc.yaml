@@ -1,7 +1,7 @@
 conditionalEvents:
 - condition: scene.slots.status == "FINAL" && session.params.isHasAcc == "มี"
   transitionToScene: askLogin
-- condition: scene.slots.status == "FINAL" && session.params.isHasAcc == "ไม่มี"
+- condition: scene.slots.status == "FINAL" && session.params.isHasAcc == "ไม่"
   transitionToScene: askRegister
 slots:
 - commitBehavior:

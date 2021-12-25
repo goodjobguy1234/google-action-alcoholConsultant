@@ -2,16 +2,16 @@ trainingPhrases:
 - เคเลย
 - เค
 - เคร
-- ได้อยู่($notUsedWord1 '' auto=true)
-- ($notUsedWord1 'อยากมากๆ' auto=true)
-- ($notUsedWord1 'อยาก' auto=true)
+- ได้อยู่
+- อยากมากๆ
+- อยาก
 - ได้
 - ได้ๆ
 - เค
 - อ่าห้ะ
 - เย็บ
 - เยป
-- ($hasOrNot1 'เยส' auto=true)
+- เยส
 - ต่อไป
 - จัดไป
 - ตามนั้น

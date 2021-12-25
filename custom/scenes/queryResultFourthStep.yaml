@@ -1,0 +1,23 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    webhookHandler: selectionResponse
+intentEvents:
+- intent: SKIP
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: alcoholName
+  name: alcoholName
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: ถ้ายังไม่มีสินค้าที่คุณต้องการให้พูดว่า ข้ามนะ
+      webhookHandler: queryResultForthStepCollection
+  required: true
+  type:
+    name: alcoholName

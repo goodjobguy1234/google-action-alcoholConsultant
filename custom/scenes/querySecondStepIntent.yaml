@@ -1,0 +1,13 @@
+intentEvents:
+- intent: SKIP
+  transitionToScene: queryThirdStepIntent
+- intent: queryByOccation
+  transitionToScene: querySecondStepSlotFilling
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: โอกาสในการกินละ จะกินตอนครบรอบ ฉลองวันเกิด กินเล่น ฉลอง เป็นมื้อเย็น
+              หรือ เป็นของขวัญ ถ้าไม่มีให้บอกว่า ข้าม

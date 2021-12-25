@@ -2,5 +2,11 @@ handlers:
 - name: userAccValidation
 - name: userLogin
 - name: userRegister
+- name: selectionResponse
+- name: queryResultFirstStepCollection
+- name: queryResultSecondStepCollection
+- name: confirmSelectedProductCard
+- name: queryResultThirdStepCollection
+- name: queryResultForthStepCollection
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment

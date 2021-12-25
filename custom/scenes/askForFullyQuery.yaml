@@ -1,0 +1,7 @@
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: คุณอยากค้นหาสินค้าแบบละเอียด หรือ ปานกลาง หรือ ต่ำสุด

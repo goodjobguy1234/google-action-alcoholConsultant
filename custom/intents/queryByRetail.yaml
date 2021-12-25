@@ -1,0 +1,45 @@
+parameters:
+- name: retailCost
+  type:
+    list: true
+    name: actions.type.Number
+- name: qualifier
+  type:
+    name: queryQualifier
+trainingPhrases:
+- ($qualifier 'น้อยกว่า' auto=false) ($retailCost '1500' auto=false)
+- ($retailCost '1100' auto=true) ($qualifier 'ระหว่าง' auto=false) ($retailCost '1300'
+  auto=false) บาท($number1 '' auto=true)
+- ($retailCost '1260' auto=true) บาท
+- อยากได้($qualifier 'ถูกกว่า' auto=false) ($retailCost '1350' auto=false)
+- อยากได้ราคา($qualifier 'ถูกกว่า' auto=false) ($retailCost '1200' auto=false) บาท($qualifier
+  '' auto=true)($retailCost '' auto=true)
+- ($qualifier 'แพงกว่า' auto=true)
+- ($qualifier 'ไม่แพง' auto=false)
+- ขอ($qualifier 'ไม่แพง' auto=false)
+- ($qualifier 'มากกว่า' auto=false) ($retailCost '1230' auto=false)
+- ($qualifier 'ไม่มากกว่า' auto=false) ($retailCost '1490' auto=false)
+- ($qualifier 'ไม่เอาแพงกว่า' auto=false) ($retailCost '1350 ' auto=false)บาทนะ
+- ขอ($qualifier 'ไม่เกิน' auto=false) ($retailCost '1300' auto=false) นะ
+- ราคาอยู่($qualifier 'ระหว่าง' auto=false)ช่วง ($retailCost '1200' auto=false) ($qualifier
+  'ถึง' auto=false) ($retailCost '3000' auto=false) บาท
+- ราคา($qualifier 'ไม่ต่ำกว่า' auto=false) ($retailCost '1250' auto=false)
+- ราคา($qualifier 'ไม่อย่างน้อย' auto=false) ($retailCost '1400' auto=false)
+- ($notUsedWord1 'ขอราคา' auto=true)($qualifier 'ต่ำกว่า' auto=false) ($retailCost
+  '1500' auto=false) บาท
+- ขอ($qualifier 'ไม่เกิน' auto=false) 1477 บาทนะ
+- ราคา($qualifier 'ไม่เกิน' auto=false) ($retailCost '1399' auto=false)
+- ราคา($qualifier 'ไม่เกิน' auto=false) ($retailCost '5000' auto=false)
+- ราคา($qualifier 'ไม่น้อยกว่า' auto=false) ($retailCost '3000' auto=false)
+- ($qualifier 'น้อยกว่าเท่ากับ' auto=false) ($retailCost '1000' auto=false)
+- ($qualifier 'น้อยกว่า' auto=false) ($retailCost '3000' auto=false)
+- ($qualifier 'มากกว่า' auto=false) ($retailCost '2000' auto=false)
+- ราคา($qualifier 'มากกว่าเท่ากับ' auto=false) ($retailCost '3300' auto=false)
+- ราคา($qualifier 'มากกว่า' auto=false) ($retailCost '4000' auto=false)
+- ราคา($qualifier 'เท่ากับ' auto=false) ($retailCost '1000' auto=false)
+- ราคา($qualifier 'น้อยกว่า' auto=false) ($retailCost '100' auto=false)
+- ราคา ($retailCost '2000' auto=false)
+- ราคา ($retailCost '1000' auto=false) ($qualifier 'ถึง' auto=false) ($retailCost
+  '3000' auto=false)
+- ราคาประมาณ($qualifier 'ระหว่าง' auto=false) ($retailCost '1500' auto=false) ($qualifier
+  'ถึง' auto=false) ($retailCost '2000' auto=false)

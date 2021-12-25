@@ -1,0 +1,13 @@
+intentEvents:
+- intent: queryByType
+  transitionToScene: queryFirstStepSlotFilling
+- intent: SKIP
+  transitionToScene: querySecondStepIntent
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: คุณสามารถเลือกที่จะค้นหาสินค้าตามชนิดแอลกอฮอล์ได้เลยนะ ไม่ว่าจะบอกเป็นชนิดใหญ่
+              เช่น ไวน์ เบียร์ หรือระบุเป็นชนิดเล็กก็ได้เช่น ไวน์แดง ไวน์ขาว โซจู

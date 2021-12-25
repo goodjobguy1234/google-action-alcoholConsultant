@@ -1,0 +1,19 @@
+parameters:
+- name: queryLevel
+  type:
+    name: queryLevel
+trainingPhrases:
+- ขอแบบ($queryLevel 'สูง' auto=false)สุดเลย
+- ขอแบบ($queryLevel 'ต่ำ' auto=false)
+- ขอแบบ($queryLevel 'ปานกลาง' auto=false)
+- อยากได้แบบปานกลางอะ
+- แนะนำอย่าง($queryLevel 'ละเอียด' auto=false)หน่อย
+- จัดมา($queryLevel 'เต็มที่' auto=false)เลย
+- ($queryLevel 'เต็มที่' auto=false)ที
+- ($queryLevel 'สูง' auto=false)สุด
+- แนะนำได้($queryLevel 'เต็มที่' auto=false)
+- อยากได้ความ($queryLevel 'ละเอียดสูง' auto=false)
+- ($queryLevel 'รู้อยู่แล้ว' auto=false)อะ
+- ค้นหาความ($queryLevel 'ละเอียดต่ำ' auto=false)
+- ค้นหาขั้น($queryLevel 'สูง' auto=false)
+- ช่วยแนะนำอย่าง($queryLevel 'ละเอียด' auto=false)ให้ที

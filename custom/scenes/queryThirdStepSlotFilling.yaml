@@ -1,0 +1,26 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: queryResultThirdStep
+slots:
+- commitBehavior:
+    writeSessionParam: queryQualifier
+  defaultValue:
+    sessionParam: queryQualifier
+  name: queryQualifier
+  type:
+    name: queryQualifier
+- commitBehavior:
+    writeSessionParam: percent
+  name: percent
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: แอลกอฮอล์คุณเท่าไรนะ
+  required: true
+  type:
+    list: true
+    name: actions.type.Number
