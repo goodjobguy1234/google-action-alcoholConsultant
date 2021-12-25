@@ -1,0 +1,16 @@
+parameters:
+- name: occasion
+  type:
+    list: true
+    name: alcoholOccasion
+trainingPhrases:
+- อยากดื่ม($occasion 'ฉลอง' auto=false)และเป็น($occasion 'มื้อเย็น' auto=false)จ๊ะ
+- ($occasion 'ฉลอง' auto=false)กับ($occasion 'ธรรมดา' auto=false)ทั่วไป($alcoholOccasion1
+  '' auto=true)
+- ดื่มในงาน($occasion 'วันเกิด' auto=false)เพ($alcoholOccasion2 '' auto=true)ื่อน
+- ($alcoholOccasion1 '' auto=true)เฉลิม($occasion 'ฉลอง' auto=false)ครับ
+- ดื่มในโอกาสงาน($occasion 'วันเกิด' auto=false)ครับ($alcoholOccasion1 '' auto=true)($alcoholOccasion2
+  '' auto=true)($alcoholOccasion3 '' auto=true)
+- อยากดื่มเพื่อน($occasion 'ฉลอง' auto=false)ค่ะ($alcoholOccasion1 '' auto=true)
+- ($occasion 'มื้อเย็น' auto=true)
+- กินเป็น($occasion 'มื้อเย็น' auto=false)กับ($occasion 'ฉลอง' auto=false)ครับ

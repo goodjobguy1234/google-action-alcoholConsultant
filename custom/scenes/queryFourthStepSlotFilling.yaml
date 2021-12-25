@@ -1,0 +1,24 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: queryResultFourthStep
+slots:
+- commitBehavior:
+    writeSessionParam: retailCost
+  name: retailCost
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: บอกราคากับน้องเล็กอีกรอบได้มั้ย น้องเล็กฟังไม่ทัน
+  required: true
+  type:
+    list: true
+    name: actions.type.Number
+- commitBehavior:
+    writeSessionParam: qualifier
+  name: qualifier
+  type:
+    name: queryQualifier

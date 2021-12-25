@@ -8,7 +8,6 @@ conditionalEvents:
             variants:
             - speech: <speak>งั้นเอาตามนี้เลยนะ<break time="1"/>$session.params.alcoholName
                 $session.params.percent เปอร์เซ็น</speak>
-  transitionToScene: SecondTestResponse
 slots:
 - commitBehavior:
     writeSessionParam: alcoholName

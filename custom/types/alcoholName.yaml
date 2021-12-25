@@ -1,0 +1,48 @@
+synonym:
+  entities:
+    Barolo DOCG Briccolina:
+      synonyms:
+      - Barolo DOCG Briccolina
+      - บาโรโล่ ดอคจี บริคโคลีน่า
+    Barolo DOCG del Cumune di Serralunga d'Alba:
+      synonyms:
+      - Barolo DOCG del Cumune di Serralunga d'Alba
+      - บาโรโล่ ดอคจี เดล คูมูเน่ ดี เซอราลุงก้า ดี อัลบ้า
+    Choojai Rice Wine:
+      synonyms:
+      - Choojai Rice Wine
+      - ไวน์ข้าวชูใจ
+      - ชูใจ
+    EMF - Chardonnay:
+      synonyms:
+      - EMF - Chardonnay
+      - อีเอมเอฟ ชาดอนเน่
+    Gran Rue Metodo Classico:
+      synonyms:
+      - Gran Rue Metodo Classico
+      - แกรน รูเอ เมโทโด คลาสสิโค
+    Irene:
+      synonyms:
+      - Irene
+      - ไอรีน
+    L'INIMITABLE - APPLE CIDER 75CL:
+      synonyms:
+      - L'INIMITABLE - APPLE CIDER 75CL
+      - ลินิมิเทเบิ้ล แอปเปิ้ล ไซเดอร์
+    Piemonte Chardonnay DOC:
+      synonyms:
+      - Piemonte Chardonnay DOC
+      - ปีเยมอนเต้ ชาดอนเน่ ดอค
+    Sonsierra Seleccion Rose:
+      synonyms:
+      - Sonsierra Seleccion Rose
+      - ซอนเซียร่าซีเล็คชั่นโรเซ่
+    Villafresno Blanco:
+      synonyms:
+      - Villafresno Blanco
+      - วิลลาเฟรซโน บลังโค
+    Villafresno Tinto:
+      synonyms:
+      - Villafresno Tinto
+      - วิลลาเฟรซโน่ ตินโต
+  matchType: EXACT_MATCH

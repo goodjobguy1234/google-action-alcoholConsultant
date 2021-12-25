@@ -1,0 +1,22 @@
+parameters:
+- name: drinkType
+  type:
+    list: true
+    name: queryType
+trainingPhrases:
+- ($drinkType 'ไซเดอร์' auto=true)
+- อยากดื่ม($drinkType 'ไซเดอร์' auto=false)ค่ะ($drinkType '' auto=true)
+- ($drinkType 'บรั่นดี' auto=false)แล้วก็($drinkType 'ไวน์' auto=false)
+- ($drinkType 'เหล้า' auto=false)
+- ($drinkType 'ไวน์หวาน' auto=true)($queryType1 '' auto=true)
+- ($drinkType 'ไวน์ข้าว' auto=true)
+- ขอดู($drinkType 'ไวน์ขาว' auto=false) ($drinkType 'ไวน์แดง' auto=false) แล้วก็ ($drinkType
+  'สปาร์คกลิ้ง' auto=false)
+- ($drinkType 'ไวน์ขาว' auto=true)
+- ($drinkType 'ไวน์แดง' auto=true)($queryType1 '' auto=true)
+- ขอดู($drinkType 'ไวน์แดง' auto=false)และ($drinkType 'ไวน์ขาว' auto=false)หน่อย($drinkType
+  '' auto=true)
+- ขอ($drinkType 'ไวน์แดง' auto=false)
+- อยากได้($drinkType 'ไวน์แดง' auto=false)ค่ะ($drinkType '' auto=true)
+- อยากหา($drinkType 'ไวน์แดง' auto=false)ครับ($drinkType '' auto=true)($alcoholOccasion1
+  '' auto=true)

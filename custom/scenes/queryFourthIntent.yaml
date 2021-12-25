@@ -1,0 +1,12 @@
+intentEvents:
+- intent: SKIP
+  transitionToScene: actions.scene.END_CONVERSATION
+- intent: queryByRetail
+  transitionToScene: queryFourthStepSlotFilling
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: ราคาที่ต้องคุณการต้องการประมาณเท่าไร

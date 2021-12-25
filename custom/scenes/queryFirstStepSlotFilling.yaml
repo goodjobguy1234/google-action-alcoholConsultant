@@ -1,0 +1,19 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: queryResultFirstStep
+slots:
+- commitBehavior:
+    writeSessionParam: drinkType
+  name: drinkType
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: คุณบอกชนิดเหล้ากับน้องเล็กใหม่อีกรอบได้มั้ยคะ
+  required: true
+  type:
+    list: true
+    name: queryType

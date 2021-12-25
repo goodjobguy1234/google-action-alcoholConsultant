@@ -1,0 +1,20 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: queryResultSecondStep
+slots:
+- commitBehavior:
+    writeSessionParam: occasion
+  name: occasion
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            firstSimple:
+              variants:
+              - speech: เรายังไม่รู้โอกาสในการกินเลย คุณจะกินตอนครบรอบ ฉลองวันเกิด
+                  กินเล่น ฉลอง เป็นมื้อเย็นหรือเป็นของขวัญ ถ้าไม่มีให้บอกว่า ข้าม
+  required: true
+  type:
+    list: true
+    name: alcoholOccasion

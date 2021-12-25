@@ -1,0 +1,28 @@
+parameters:
+- name: queryQualifier
+  type:
+    name: queryQualifier
+- name: percent
+  type:
+    list: true
+    name: actions.type.Number
+trainingPhrases:
+- ระหว่าง ($percent '13' auto=false) ($queryQualifier 'ถึง' auto=false) ($percent
+  '15' auto=false) %($percent '' auto=true)($queryQualifier1 '' auto=true)($number1
+  '' auto=true)
+- ($queryQualifier 'ไม่เกิน' auto=false)13%($percent '' auto=true)
+- อยากได้ ($percent '13' auto=false)%($percent '' auto=true)
+- ($percent '12' auto=true)%
+- เปอร์เซ็น ($percent '30' auto=false)
+- เปอร์เซ็น ($percent '30' auto=false)%
+- เปอร์เซ็น($queryQualifier 'น้อยกว่าเท่ากับ' auto=false) ($percent '45' auto=false)%
+- เปอร์เซ็น($queryQualifier 'น้อยกว่า' auto=false) ($percent '13' auto=false)%
+- เปอร์เซ็น($queryQualifier 'สูงกว่า' auto=false) ($percent '30' auto=false)%
+- เปอร์เซ็น($queryQualifier 'ไม่ตำ่กว่า' auto=false) ($percent '50' auto=false)%
+- เปอร์เซ็น($queryQualifier 'ระหว่าง' auto=false) ($percent '30' auto=false) ($queryQualifier
+  'ถึง' auto=false) ($percent '40' auto=false)
+- เปอร์เซ็น($queryQualifier 'ไม่เกิน' auto=false) ($percent '15' auto=false)%
+- เปอร์เซ็น($queryQualifier 'มากกว่าเท่ากับ' auto=false) ($percent '30' auto=false)%
+- เปอร์เซ็น($queryQualifier 'เท่ากับ' auto=false) ($percent '14' auto=false) %
+- เปอร์เซ็น($queryQualifier 'มากกว่า' auto=false) ($percent '20' auto=false)%
+- เปอร์เซ็น($queryQualifier 'น้อยกว่า' auto=false) ($percent '10' auto=false)%

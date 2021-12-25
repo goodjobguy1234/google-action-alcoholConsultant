@@ -1,0 +1,14 @@
+synonym:
+  entities:
+    ต่ำ:
+      synonyms:
+      - ต่ำ
+      - รู้อยู่แล้ว
+    ปานกลาง:
+      synonyms:
+      - ปานกลาง
+    สูง:
+      synonyms:
+      - สูง
+      - ละเอียด
+  matchType: EXACT_MATCH
